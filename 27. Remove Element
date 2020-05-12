@@ -1,0 +1,11 @@
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int n = nums.size(),s;
+        std::vector<int>::iterator pend; 
+  
+    // std :: remove function call 
+    pend = std::remove(nums.begin(), nums.end(), val);
+        return pend - nums.begin();    
+    }
+};
